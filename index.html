@@ -3,10 +3,131 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <!-- Общий стиль -->
+      
+    <!-- Скрипт -->
+      
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+        
+  <!-- Шапка -->          
+      <header class="page-header">
+        <nav class="main-nav main-nave--closed">
+          <div class="main-nav__logo">PINK</div>                           
+          <button class="main-nav__switch" type="button"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__list"><a href="#">ГЛАВНАЯ</a></li>
+              <li class="main-nav__list"><a href="#">ФОТОГРАФИИ</a></li>
+              <li class="main-nav__list"><a href="#">КОНКУРС</a></li>
+              <li class="main-nav__list"><a href="#">HTML ACADEMY</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="intro">
+        <div class="intro__img">
+          <img src="#" alt="PINK">
+        </div>
+        <div class="intro__service">
+          <button class="intro__button--download  button" type="button">Скачать приложение</button>
+          <div class="intro__systems-support">
+            <img src="#" alt="apple">
+            <img src="#" alt="iphone">
+            <img src="#" alt="windows">
+          </div>
+          <small class="intro__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+        </div>
+      </section>
+      <section class="advantages">
+          <p class="advantages__slogan">Устали от  серости мегаполиса?<br>Нам  есть, что вам предложить!</p> 
+          <ul class="advantages__items">
+            <li class="advantages__skill">
+              <b>Поднимает настроение</b>
+              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__skill">
+              <b>Меняет мир вокруг</b>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__skill">
+              <b>Заводит новых друзей</b>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__footer"></div>
+      </section>
+        
+        
+ <!-- Отзывы -->         
+      <section class="comments">
+        <div class="comments__wrapper  slider">
+          <input class="slider__input" type="radio" id="comments-input-1">
+          <input class="slider__input" type="radio" id="comments-input-2">
+          <input class="slider__input" type="radio" id="comments-input-3">
+          <ul class="comments__items">
+            <li class="comments__list  slider__list">
+              <h3 class="comments__list-title">Николай Петров</h3>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коммнетариях к выложенной фотографии!»</p>
+            </li>
+            <li class="comments__list  slider__list">
+              <h3 class="comments__list-title"> </h3>
+              <p></p>
+            </li>
+            <li class="comments__list  slider__list">
+              <h3 class="comments__list-title"> </h3>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+<!-- Список возможных подписок -->       
+      <section class="make-choice">
+        <div class="make-choice__wrapper slider">
+          <input class="slider__input" type="radio" id="make-choice-input-1">
+          <input class="slider__input" type="radio" id="make-choice-input-2">
+          <input class="slider__input" type="radio" id="make-choice-input-3">
+          <ul class="make-choice__items">
+            <li class="make-choice__list  slider__list">
+              <div class="status">
+                <div class="status__label">ХИТ</div>
+                <div class="status__head">
+                  <div class="status__title">СТАНДАРТ</div>
+                  <div class="status__price">3,99 USD</div>
+                </div>
+                <div class="status__list">
+                  <div class="status__i type-full">РОЗОВЫЙ ФИЛЬТР</div>
+                  <div class="status__i type-full">СМАЙЛИКИ</div>
+                  <div class="status__i type-block">КОММЕНТАРИИ</div>
+                </div>
+              </div>
+            </li>
+ <!-- Продолжение списка -->          
+              
+          </ul>
+        </div>
+      </section>
+        
+  <!-- Подвал -->          
+      <section class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__contacts"  >
+            <p>Остались вопросы?<br>Свяжитесь с нами!</p>
+            <b class="page-footer__header">Звоните:</b>
+            <span class="page-footer__item">+7(812) 555-66-66</span>
+            <b class="page-footer__header">Пишите:</b>
+            <span class="page-footer__item">mail@htmlacademy.ru</span>         
+            <b class="page-footer__header">Приезжайте в гости:</b>
+            <span class="page-footer__item">ул. Большая Конюшенная, 19/8</span>              
+          </div>
+          <div class="page-footer_map"  >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3110307547195!2d30.324044057796144!3d59.94055514922485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e19ad11bf%3A0xe08b6aa6ddae3100!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMyDQkNC_0LDRgNGC0LDQvNC10L3RgtGL!5e0!3m2!1sru!2sru!4v1488610245800" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>  
+        </div> 
+      </section> 
+        
+ 
 
   </body>
 </html>
