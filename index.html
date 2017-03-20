@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>PINK</title>
     <!-- Общий стиль -->
-      
+  <link href="css/style.css" rel="stylesheet" type="text/css" />    
     <!-- Скрипт -->
       
   </head>
@@ -12,19 +12,23 @@
         
   <!-- Шапка -->          
       <header class="page-header">
-        <nav class="main-nav main-nave--closed">
-          <div class="main-nav__logo">PINK</div>                           
-          <button class="main-nav__switch" type="button"></button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__header" > 
+            <div class="main-nav__logo"> </div>                         
+            <button class="main-nav__switch" type="button"></button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__items">
-              <li class="main-nav__list"><a href="#">ГЛАВНАЯ</a></li>
-              <li class="main-nav__list"><a href="photo.html">ФОТОГРАФИИ</a></li>
-              <li class="main-nav__list"><a href="form.html">КОНКУРС</a></li>
-              <li class="main-nav__list"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+              <hr>
+              <li class="main-nav__list"><a href="index.html">ГЛАВНАЯ</a></li><hr>
+              <li class="main-nav__list"><a href="photo.html">ФОТОГРАФИИ</a></li><hr>
+              <li class="main-nav__list"><a href="form.html">КОНКУРС</a></li><hr>
+              <li class="main-nav__list"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li><hr>
             </ul>
           </div>
         </nav>
       </header>
+      
       <section class="intro">
         <div class="intro__img">
           <img src="#" alt="PINK">
@@ -32,13 +36,14 @@
         <div class="intro__service">
           <button class="intro__button intro__button--download  button" type="button">Скачать приложение</button>
           <div class="intro__systems-support">
-            <a href="#" class="intro__icon intro__icon--apple">Apple</a>
-            <a href="#" class="intro__icon intro__icon--iphone">Android</a>
-            <a href="#" class="intro__icon intro__icon--windows">Windows</a>
+            <a href="#" class="intro__icon intro__icon--apple"><img src="img/logo-apple.svg" alt="apple"></a>
+            <a href="#" class="intro__icon intro__icon--iphone"><img src="img/logo-android.svg" alt="android"></a>
+            <a href="#" class="intro__icon intro__icon--windows"> <img src="img/logo-microsoft.svg" alt="windows"></a>
           </div>
           <small class="intro__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
         </div>
       </section>
+      
       <section class="advantages">
           <p class="advantages__slogan">Устали от  серости мегаполиса?<br>Нам  есть, что вам предложить!</p> 
           <ul class="advantages__items">
@@ -62,9 +67,7 @@
  <!-- Отзывы -->         
       <section class="comments">
         <div class="comments__wrapper  slider">
-          <input class="slider__input" type="radio" id="comments-input-1">
-          <input class="slider__input" type="radio" id="comments-input-2">
-          <input class="slider__input" type="radio" id="comments-input-3">
+
           <ul class="comments__items">
             <li class="comments__list  slider__list">
               <h3 class="comments__list-title">Николай Петров</h3>
@@ -79,20 +82,22 @@
               <p></p>
             </li>
           </ul>
+          <input class="slider__input" type="radio" id="comments-input-1">
+          <input class="slider__input" type="radio" id="comments-input-2">
+          <input class="slider__input" type="radio" id="comments-input-3">            
         </div>
       </section>
         
 <!-- Список возможных подписок -->       
       <section class="make-choice">
         <div class="make-choice__wrapper slider">
-          <input class="slider__input" type="radio" id="make-choice-input-1">
-          <input class="slider__input" type="radio" id="make-choice-input-2">
-          <input class="slider__input" type="radio" id="make-choice-input-3">
+
           <ul class="make-choice__items">
             <li class="make-choice__list  slider__list">
               <div class="status">
-                <div class="status__label">ХИТ</div>
+                
                 <div class="status__head">
+                  <div class="status__label">ХИТ</div>
                   <div class="status__title">СТАНДАРТ</div>
                   <div class="status__price">3,99 USD</div>
                 </div>
@@ -106,6 +111,9 @@
  <!-- Продолжение списка -->          
               
           </ul>
+          <input class="slider__input" type="radio" id="make-choice-input-1">
+          <input class="slider__input" type="radio" id="make-choice-input-2">
+          <input class="slider__input" type="radio" id="make-choice-input-3">            
         </div>
       </section>
         
@@ -122,7 +130,7 @@
             <span class="page-footer__item">ул. Большая Конюшенная, 19/8</span>              
           </div>
           <div class="page-footer_map"  >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3110307547195!2d30.324044057796144!3d59.94055514922485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e19ad11bf%3A0xe08b6aa6ddae3100!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMyDQkNC_0LDRgNGC0LDQvNC10L3RgtGL!5e0!3m2!1sru!2sru!4v1488610245800" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.5304306235782!2d30.32140161652283!3d59.93993363187663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBolshaya+Konyushennaya+5%D0%90+Apartment%2C+Bolshaya+Konyushennaya+ulitsa%2C+Sankt-Peterburg!5e0!3m2!1sru!2sru!4v1490027066301" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>  
         </div> 
       </section> 

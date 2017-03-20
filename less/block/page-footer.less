@@ -1,0 +1,35 @@
+.page-footer{
+  color: @text-main;
+  width: 320px;
+  font-size: @font-size-max;   
+  margin: 1em auto;
+  font-weight: 200;    
+  text-align: center;  
+   
+}
+.page-footer_map{
+  position: relative;
+  background-color: @color-bg-main;
+  padding: 20px;     
+    
+}
+.page-footer_map::before{
+  content: ''; 
+  position: absolute;
+  border: 160px solid transparent;
+  border-top: 20px solid @color-bg-main;
+  left: 0;
+}
+
+
+.page-footer__item{
+  color: @color-hover;
+
+}
+
+.page-footer__header{
+  font-size: @font-size-big;      
+  font-weight: 700;
+  padding-top: 1.5em;
+  display: block;    
+}

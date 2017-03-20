@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />       
   </head>
   <body>
   <!-- Шапка -->          
       <header class="page-header">
-        <nav class="main-nav main-nave--closed">
-          <div class="main-nav__logo">PINK</div>                           
-          <button class="main-nav__off" type="button"></button>
+        <nav class="main-nav main-nav--opened">
+          <div class="main-nav__header" > 
+            <div class="main-nav__logo"> </div>                         
+            <button class="main-nav__off" type="button"></button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__items">
-              <li class="main-nav__list"><a href="#">ГЛАВНАЯ</a></li>
+              <li class="main-nav__list"><a href="index.html">ГЛАВНАЯ</a></li>
               <li class="main-nav__list"><a href="photo.html">ФОТОГРАФИИ</a></li>
               <li class="main-nav__list"><a href="form.html">КОНКУРС</a></li>
               <li class="main-nav__list"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
@@ -20,6 +23,7 @@
           </div>
         </nav>
       </header>
+      
       <section class="caption-page caption-page--photo">
         <div class="caption-page__header">
           <h3>Фотографии пользователей</h3>        
@@ -30,50 +34,61 @@
       </section>
       
    <!-- ПЕрвый  пост дня -->      
-      <section class="user-post user-post--best">
+      <section class="user-post user-post__wrap user-post--best">
         <div class="user-post__label">ПАНОРАМА ДНЯ</div>
-        <div class="user-post__header">
-          <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a> 
+        
+        <div class="user-post__image">
+          <a href="#" class="user-post__picture user-post__picture--full"><img alt="photo" src="img/panorama-mobile@1x.jpg" class="user-post__picture user-post__picture--prev"></a> 
+        </div>
+          
+        <div class="user-post__wrapper">  
+          <div class="user-post__header">  
+            <p class="user-post__author">Анна</p>        
+            <div class="user-post__date">(5 минут назад)</div> 
           </div>
-          <p class="user-post__author">Анна</p>        
-          <div class="user-post__date">(5 минут назад)</div> 
-        </div> 
-        <div class="user-post__content">
-          <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        </div>
-        <div class="user-post__like">
-          <span class="user-post__like-icon"></span>
-          <span class="user-post__like-link">Нравится:</span>
-          <span class="user-post__count-like">215</span>
-        </div>
+      
+          <div class="user-post__content">
+            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </div>
+          <div class="user-post__like">
+            <span class="user-post__like-icon"> </span>
+            <span class="user-post__like-link">Нравится:</span>
+            <span class="user-post__count-like">215</span>
+          </div>
+        </div>  
       </section>
       
     <!-- Второй пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a>  
+            <a href="#" class="user-post__picture user-post__picture--full"><img src="img/photo-1-mobile@1x.jpg" alt="photo" class="user-post__picture user-post__picture--prev"></a>  
           </div>
-          <p class="user-post__author">Левон</p>        
-          <div class="user-post__date">(5 часов назад)</div> 
-        </div> 
-        <div class="user-post__content">
-          <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        </div>
-        <div class="user-post__like">
-          <span class="user-post__like-icon"></span>
-          <span class="user-post__like-link">Нравится:</span>
-          <span class="user-post__count-like">356</span>
+          
+        <div class="user-post__wrapper">            
+          <div class="user-post__header">  
+            <p class="user-post__author">Левон</p>        
+            <div class="user-post__date">(5 часов назад)</div> 
+          </div> 
+          <div class="user-post__content">
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </div>
+          <div class="user-post__like">
+            <span class="user-post__like-icon"></span>
+            <span class="user-post__like-link">Нравится:</span>
+            <span class="user-post__count-like">356</span>
+          </div>
         </div>
       </section>
            
     <!-- Третий пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a> 
+            <a href="#" class="user-post__picture user-post__picture--full"><img src="img/photo-2-mobile@1x.jpg" alt="photo" class="user-post__picture user-post__picture--prev"></a> 
           </div>
+        <div class="user-post__wrapper">            
+        <div class="user-post__header">  
           <p class="user-post__author">Антон</p>        
           <div class="user-post__date">(12 часов назад)</div> 
         </div> 
@@ -85,15 +100,18 @@
           <span class="user-post__like-link">Нравится:</span>
           <span class="user-post__count-like">666</span>
         </div>
+        </div>
       </section>
       
     <!-- Четвертый пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a> 
+            <a href="#" class="user-post__picture user-post__picture--full"><img src="img/photo-3-mobile@1x.jpg" alt="photo" class="user-post__picture user-post__picture--prev"></a> 
           </div>
-          <p class="user-post__author">>Борис</p>        
+        <div class="user-post__wrapper">            
+        <div class="user-post__header">  
+          <p class="user-post__author">Борис</p>        
 
           <div class="user-post__date">(20 часов назад)</div> 
         </div> 
@@ -105,15 +123,18 @@
           <span class="user-post__like-link">Нравится:</span>
           <span class="user-post__count-like">215</span>
         </div>
+        </div>
       </section>   
       
       
     <!-- Пятый пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a>  
+            <a href="img/photo-4-mobile@1x.jpg" class="user-post__picture user-post__picture--full"><img src="img/photo-4-mobile@1x.jpg" alt="photo" class="user-post__picture user-post__picture--prev"></a>  
           </div>
+        <div class="user-post__wrapper">            
+        <div class="user-post__header">  
           <p class="user-post__author">Сергей</p>        
           <div class="user-post__date">(5 часов назад)</div> 
         </div> 
@@ -125,15 +146,18 @@
           <span class="user-post__like-link">Нравится:</span>
           <span class="user-post__count-like">4</span>
         </div>
+        </div>
       </section>  
       
       
     <!-- Шестой пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a>    
+            <a href="#" class="user-post__picture user-post__picture--full"><img src="img/photo-5-mobile@1x.jpg" alt="photo" class=" user-post__picture user-post__picture--prev"></a>    
           </div>
+        <div class="user-post__wrapper">            
+        <div class="user-post__header">  
           <p class="user-post__author">Максим</p>        
 
           <div class="user-post__date">(40 часов назад)</div> 
@@ -146,14 +170,17 @@
           <span class="user-post__like-link">Нравится:</span>
           <span class="user-post__count-like">150</span>
         </div>
+        </div>
       </section>  
       
     <!-- Седьмой пост -->  
       <section class="user-post__wrap">
-        <div class="user-post__header">
+        
           <div class="user-post__image">
-            <a href="#" class="user-post__picture user-post__picture--full"><img src="#" alt="photo" class=" user-post__picture user-post__picture--prev"></a>  
+            <a href="#" class="user-post__picture user-post__picture--full"><img src="img/photo-6-mobile@1x.jpg" alt="photo" class=" user-post__picture user-post__picture--prev"></a>  
           </div>
+        <div class="user-post__wrapper">            
+        <div class="user-post__header">  
           <p class="user-post__author">Надежда</p>        
           <div class="user-post__date">(45 часов назад)</div> 
         </div> 
@@ -164,6 +191,7 @@
           <span class="user-post__like-icon"></span>
           <span class="user-post__like-link">Нравится:</span>
           <span class="user-post__count-like">2560</span>
+        </div>
         </div>
       </section>
       
@@ -184,19 +212,17 @@
      <!--Подвал -->        
       <footer class="typical-footer">
         <div class="typical-footer__logo">
-          <img src="" alt="logo">
-          <p>PINK</p>
         </div>
         <div class="typical-footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--tw"></a>
-            <a class="social-link social-link--fc"></a>
-            <a class="social-link social-link--yt"></a>
-          </span>
+          
+            <a class="social-link social-link--tw"><img src="img/icon-twitter.svg" alt="twitter"></a>
+            <a class="social-link social-link--fc"><img src="img/icon-facebook.svg" alt="facebook"></a>
+            <a class="social-link social-link--yt"><img src="img/icon-youtube.svg" alt="youtube"></a>
+         
         </div>
         <div class="typical-footer__copyright">
           Разработано 
-          <span class="typical-footer__copyright-icon"></span>
+       <img class="copyright__img" src="img/logo-htmlacademy.svg">  
         </div>
       </footer>   
           

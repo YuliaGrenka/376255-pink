@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+   <link href="css/style.css" rel="stylesheet" type="text/css" />        
   </head>
   <body>
   <!-- Шапка -->          
       <header class="page-header">
-        <nav class="main-nav main-nave--closed">
-          <div class="main-nav__logo">PINK</div>          
-          <button class="main-nav__off" type="button"></button>
+        <nav class="main-nav main-nav--opened">
+          <div class="main-nav__header" > 
+            <div class="main-nav__logo"> </div>                         
+            <button class="main-nav__off" type="button"></button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__items">
-              <li class="main-nav__list"><a href="#">ГЛАВНАЯ</a></li>
+              <li class="main-nav__list"><a href="index.html">ГЛАВНАЯ</a></li>
               <li class="main-nav__list"><a href="photo.html">ФОТОГРАФИИ</a></li>
               <li class="main-nav__list"><a href="form.html">КОНКУРС</a></li>
               <li class="main-nav__list"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
@@ -82,19 +85,17 @@
      <!--Подвал -->        
       <footer class="typical-footer">
         <div class="typical-footer__logo">
-          <img src="" alt="logo">
-          <p>PINK</p>
         </div>
         <div class="typical-footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--tw"></a>
-            <a class="social-link social-link--fc"></a>
-            <a class="social-link social-link--yt"></a>
-          </span>
+          
+            <a class="social-link social-link--tw"><img src="img/icon-twitter.svg" alt="twitter"></a>
+            <a class="social-link social-link--fc"><img src="img/icon-facebook.svg" alt="facebook"></a>
+            <a class="social-link social-link--yt"><img src="img/icon-youtube.svg" alt="youtube"></a>
+         
         </div>
         <div class="typical-footer__copyright">
           Разработано 
-          <span class="typical-footer__copyright-icon"></span>
+       <img class="copyright__img" src="img/logo-htmlacademy.svg">  
         </div>
       </footer>   
                     
