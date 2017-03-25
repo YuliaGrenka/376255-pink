@@ -2,33 +2,35 @@
   box-sizing: border-box;
   color: @text-white;
   background-color: #2b3b4b;
+	width: 320px;
+	margin:0 auto;
 }
 .intro__button{
   margin:  10px auto;  
-    
-}
-.intro__img{
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-  min-height: 237px;
+	&:hover{
+		color: @color-hover;
+		border-color: @color-hover;
+	}  
+	&:focus{
+		outline: none;
+	}
 }
 
 .intro__service {
   text-align: center;
+	padding: 20px;
 }
 .intro__icon {
-  display: inline-block;
+  display: inline-block;   
+	&:not(:last-of-type){
+  	margin-right: 30px;
+	} 
 }
-    
-.intro__icon:not(:last-of-type){
-  margin-right: 30px;
-} 
-
 .intro__legend{
   text-align: center;
   font-size: @font-size-base;
   display: flex;
   justify-content: center;
-  width: 300px;
   flex-wrap: wrap;
   margin: auto;
   padding-bottom: 30px;

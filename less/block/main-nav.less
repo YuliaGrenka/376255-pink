@@ -1,6 +1,4 @@
-.main-nav {
-
-  &--closed {
+.main-nav--closed {
   background-color: #2b3b4b;
  
   .main-nav__switch{
@@ -37,8 +35,10 @@
   .main-nav__switch:active::after{
     opacity: 0.4;    
   }     
+
 }
-  &--opened {
+		
+.main-nav--opened {
   background-color: #2b3b4b;
  
   .main-nav__off{
@@ -49,35 +49,27 @@
     height: 45px; 
     background: transparent;
     float: right;
+		&:after{
+			content: " ";
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			float: right;
+			background-image: url('../img/icon-menu-burger.svg');
+			background-repeat: no-repeat;
+			background-size: 90% 100%;
+			cursor: pointer; 
+			background-position: center;
+  	}
+		&:hover::after{
+			background-image: url('../img/icon-menu-burger-hover.svg');
+		}
+		&::active::after{
+    	opacity: 0.4;    
+  	}     
   }
-
-  .main-nav__off:after{
-    content: " ";
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    float: right;
-    background-image: url('../img/icon-menu-burger.svg');
-    background-repeat: no-repeat;
-    background-size: 90% 100%;
-    cursor: pointer; 
-    background-position: center;
-  }
-
-
-
-  .main-nav__off:hover::after{
-  
-    background-image: url('../img/icon-menu-burger-hover.svg');    
-  }
-  .main-nav__switch:active::after{
-    opacity: 0.4;    
-  }     
-}    
-    
-    
 }
 
 .main-nav__logo{
@@ -87,22 +79,23 @@
   width: 140px;
   height: 7px; 
   background: transparent;
+	
+	&:after{
+		content: " ";
+		width: 140px;
+		height: 25px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url('../img/logo-pink-white-mobile.svg');
+		background-repeat: no-repeat;
+		background-size: 90% 100%;
+		cursor: pointer; 
+		background-position: center; 		
+	}
 }
 
 
-.main-nav__logo:after{
-  content: " ";
-  width: 140px;
-  height: 25px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../img/logo-pink-white-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: 90% 100%;
-  cursor: pointer; 
-  background-position: center; 
-}
 
 .main-nav__switch{
   display: inline-block;
@@ -111,30 +104,25 @@
   width: 45px;
   height: 45px; 
   background: transparent;
-}
-
-.main-nav__switch:after{
-  content: " ";
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../img/icon-menu-burger.svg');
-  background-repeat: no-repeat;
-  background-size: 90% 100%;
-  cursor: pointer; 
-  background-position: center;
-}
-
-
-
-.main-nav__switch:hover::after{
-  background-image: url('../img/icon-menu-burger-hover.svg');
-    
-}
-.main-nav__switch:active::after{
-  opacity: 0.4;    
+	&:after{
+		content: " ";
+		width: 45px;
+		height: 45px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url('../img/icon-menu-burger.svg');
+		background-repeat: no-repeat;
+		background-size: 90% 100%;
+		cursor: pointer; 
+		background-position: center;		
+	}
+	&:hover::after{
+		background-image: url('../img/icon-menu-burger-hover.svg');		
+	}
+	&:active::after{
+		opacity: 0.4;   
+	}
 }
 
 
@@ -154,6 +142,9 @@
   font-weight: 800;
   text-align: center;
   text-transform: uppercase; 
+	&:hover{
+		color: @color-hover;       		
+	}
 }
 
 .main-nav__items {
@@ -166,20 +157,8 @@
 .main-nav__items li{
   list-style-type: none;
   text-align: center;   
-  line-height: 4;    
-}
-
-.main-nav__items a:hover{
-  color: @color-hover;    
-    
-}
-
-
-
-hr{
-  border: none;
-  border-bottom: 1px solid #000;
-  margin: 0;
+  line-height: 4;   
+	border-bottom: 1px solid #000;
 }
 
 .main-nav__header{
