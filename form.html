@@ -45,15 +45,16 @@
             <label for="patronymic">ОТЧЕСТВО:</label> 
             <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" pattern="^[А-Яа-яЁё]+$"> 
           </div>
+					
           <div class="register-form__choice">
             <h3 class="register-form__header">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h3>
             <div class="register-form__choice_place">
-              <label><input type="checkbox" name="selfi">Сделал селфи с акулой</label>
-              <label><input type="checkbox" name="beach">Обгорел на пляже</label>
-              <label><input type="checkbox" name="chack">Видел Чака Норриса</label>
-              <label><input type="checkbox" name="buy">Накупил сувениров</label> 
-              <label><input type="checkbox" name="keep">Удержал башню</label>
-              <label><input type="checkbox" name="crash">Разгромил отель</label>
+             	<input type="checkbox" name="selfi" id="selfi" checked><label for="selfi">Сделал селфи с акулой</label>
+              <input type="checkbox" name="beach" id="beach"><label for="beach">Обгорел на пляже</label>
+              <input type="checkbox" name="chack" id="chack"><label for="chack">Видел Чака Норриса</label>
+              <input type="checkbox" name="buy" id="buy"><label for="buy">Накупил сувениров</label> 
+              <input for="selfi" type="checkbox" name="keep" id="keep"><label for="keep">Удержал башню</label>
+              <input type="checkbox" name="crash" id="crash"><label for="crash">Разгромил отель</label>
             </div>
           </div>
           <div class="register-form__input register-form__input--contact">
@@ -66,9 +67,9 @@
           <div class="register-form__choice">
             <h3 class="register-form__header">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ</h3>
             <div class="register-form__choice_place">
-              <label><input type="radio" name="OS" value="iOS">Pink для iOS</label> 
-              <label><input type="radio" name="OS" value="Android">Pink на Android</label> 
-              <label><input type="radio" name="OS" value="Windows Phone">Windows Phone</label> 
+              <input type="radio" name="OS" value="iOS" id="iOS"><label for="iOS">Pink для iOS</label> 
+              <input type="radio" name="OS" value="Android" id="Android"><label for="Android">Pink на Android</label> 
+              <input type="radio" name="OS" value="Windows Phone" id="Windows Phone"><label for="Windows Phone">Windows Phone</label> 
             </div>
           </div>  
           <div class="register-form__user-story">          
@@ -80,7 +81,7 @@
           </div>
           <small class="register-form__reference"><sup>*</sup> — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</small>
         </form>
-          
+      </div>    
   
      <!--Подвал -->        
       <footer class="typical-footer">
@@ -100,6 +101,6 @@
       </footer>   
                     
           
-      </div>
+      
   </body>
 </html>
